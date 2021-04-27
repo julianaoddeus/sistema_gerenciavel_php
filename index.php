@@ -24,7 +24,7 @@
                 <formulário>
                 <form action="inserir.php" method="GET">
                     <div class="form-group">
-                        <input type="text" name="nome" class="form-control" placeholder="username *">
+                        <input type="text" name="nome" class="form-control" maxlength="20" placeholder="username *">
                     </div>
                     <div class="form-group">
                         <input type="password" name="senha" class="form-control" maxlength="8" placeholder="password *">
@@ -40,7 +40,6 @@
                 <thead>
                     <tr>    
                         <th>USUÁRIO</th>
-                        <th>SENHA</th>
                         <th>ADMIN</th>
                         
                     </tr>
