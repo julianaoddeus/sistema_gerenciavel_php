@@ -57,7 +57,6 @@
                     foreach($listaCadastro as $cadastro): ?>
                         <tr>
                             <td> <?php echo $cadastro['usuario']; ?></td>
-                            <td> <?php echo $cadastro['senha']; ?></td>
                             <td> <?php echo $cadastro['administrador']; ?></td>                           
                         </tr>    
                     <?php endforeach; ?> 

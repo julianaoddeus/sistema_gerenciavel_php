@@ -14,7 +14,7 @@ if(isset($_GET['nome']) && $_GET['nome'] != ''){
     if(isset($_GET['administrador'])){
         $cadastro['administrador'] = $_GET['administrador'];
     }else{
-        $cadastro['administrador'] = '';
+        $cadastro['administrador'] = 'não';
     }
     
 }
