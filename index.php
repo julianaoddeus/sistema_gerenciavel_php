@@ -40,27 +40,26 @@
                 <thead>
                     <tr>    
                         <th>USUÁRIO</th>
-                        <th>ADMIN</th>
-                        
+                        <th>ADMIN</th>                        
                     </tr>
                 </thead>
-            <tbody>
-                <?php 
-                    $sqlBusca = "SELECT * FROM tb_usuarios";
-                    $resultado = mysqli_query($conexao, $sqlBusca);
-                    
-                    $listaCadastro = [];
+                <tbody>
+                    <?php 
+                        $sqlBusca = "SELECT * FROM tb_usuarios";
+                        $resultado = mysqli_query($conexao, $sqlBusca);
+                        
+                        $listaCadastro = [];
 
-                    while($cadastro = mysqli_fetch_assoc($resultado)){
-                        $listaCadastro[] = $cadastro;
-                    }
-                    foreach($listaCadastro as $cadastro): ?>
-                        <tr>
-                            <td> <?php echo $cadastro['usuario']; ?></td>
-                            <td> <?php echo $cadastro['administrador']; ?></td>                           
-                        </tr>    
+                        while($cadastro = mysqli_fetch_assoc($resultado)){
+                            $listaCadastro[] = $cadastro;
+                        }
+                        foreach($listaCadastro as $cadastro): ?>
+                            <tr>
+                                <td> <?php echo $cadastro['usuario']; ?></td>
+                                <td> <?php echo $cadastro['administrador']; ?></td>                           
+                            </tr>    
                     <?php endforeach; ?> 
-            </tbody>
+                </tbody>
            </table> 
         </div>
     </div>

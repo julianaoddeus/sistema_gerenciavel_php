@@ -2,7 +2,6 @@
     
 if(isset($_GET['nome']) && $_GET['nome'] != ''){
     $cadastro = [];
-
     $cadastro['nome'] = $_GET['nome'];
 
     if(isset($_GET['senha'])){
